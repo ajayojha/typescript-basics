@@ -1,4 +1,4 @@
 function test(){
-console.log('abc')
+console.log('abc abc')
 
 }
