@@ -1,1 +1,1 @@
-user.controls.firstName.setValue("Professor")
+user.firstName = "Professor";

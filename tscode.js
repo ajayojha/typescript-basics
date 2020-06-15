@@ -1,2 +1,2 @@
-user.controls.firstName.setValue("Professor");
+user.firstName = "Professor";
 //# sourceMappingURL=tscode.js.map
