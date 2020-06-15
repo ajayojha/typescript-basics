@@ -1,2 +1,2 @@
-let addressFormGroup = this.formGroup.controls.address as FormGroup<Address>;
-addressFormGroup.controls.countryName.setValue("United States");
+let address = user.controls.address as FormGroup<Address>;
+address.controls.countryName.setValue("United States");
