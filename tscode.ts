@@ -1,1 +1,1 @@
-user.controls.firstName.valueChanges.subscribe(t => {... });
+set firstName(value: string){ ... }
