@@ -9,20 +9,20 @@ import { User } from './user'; import { Address } from './address'; import { Ski
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    formGroup: FormGroup;
-    formBuilder: FormBuilder;
+    formGroup: IFormGroup<User>;
+    formBuilder: IFormBuilder;
 
     constructor(formBuilder: FormBuilder) {
         this.formBuilder = formBuilder;
     }
 
     ngOnInit() {
-        this.formGroup = this.formBuilder.group({
+        this.formGroup = this.formBuilder.group<User>({
             firstName: ['', [Validators.required]],
-            address: this.formBuilder.group({
+            address: this.formBuilder.group<Address>({
                 countryName: ["", Validators.required]
             }),
-            skills: this.formBuilder.array([
+            skills: this.formBuilder.array<Skill>([
                 this.formBuilder.group({
                     name: ["", Validators.required]
                 })
