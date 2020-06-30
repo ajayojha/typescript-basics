@@ -1,5 +1,5 @@
-let formArray: FormArray = new FormArray([
-    new FormGroup({
-        name: new FormControl("")
-    })
+let formArray: IFormArray<Skill> = new FormArray([
+    new FormGroup(<ControlProp<Skill>>{
+        name: new FormControl((<ControlState<string>>""))
+    }) as IFormGroup<Skill>
 ])
