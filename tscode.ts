@@ -1,1 +1,0 @@
-let formControl: FormControl<string> = new FormControl(<ControlState<string>>"");
